@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weatherAppAlpha" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="weatherAppAlpha" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,13 +88,55 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="595.33333333333337"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="R1C-NB-OGe">
-                                                        <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dailyForcastCell" rowHeight="59" id="R1C-NB-OGe" customClass="DailyForcastTableViewCell" customModule="weatherAppAlpha" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="59"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="R1C-NB-OGe" id="s3T-yK-GSq">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
                                                             <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xye-c0-Zxe">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfk-as-M8A">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="250.66666666666666" height="59"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="min: 55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0i-Qb-D1C">
+                                                                            <rect key="frame" x="250.66666666666666" y="0.0" width="57.333333333333343" height="59"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRy-ek-csq">
+                                                                            <rect key="frame" x="308" y="0.0" width="5.3333333333333144" height="59"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" text="max: 85" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-2l-hd5">
+                                                                            <rect key="frame" x="313.33333333333331" y="0.0" width="61.666666666666686" height="59"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="xye-c0-Zxe" firstAttribute="top" secondItem="s3T-yK-GSq" secondAttribute="top" id="Pvu-u1-x3A"/>
+                                                                <constraint firstAttribute="trailing" secondItem="xye-c0-Zxe" secondAttribute="trailing" id="Qyp-4f-XAs"/>
+                                                                <constraint firstItem="xye-c0-Zxe" firstAttribute="leading" secondItem="s3T-yK-GSq" secondAttribute="leading" id="ZSf-QI-ZT7"/>
+                                                                <constraint firstAttribute="bottom" secondItem="xye-c0-Zxe" secondAttribute="bottom" id="wFu-ob-tfR"/>
+                                                            </constraints>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="dateLabel" destination="bfk-as-M8A" id="gKG-yJ-8fV"/>
+                                                            <outlet property="highTemperatureLabel" destination="dqZ-2l-hd5" id="SL0-jb-xgs"/>
+                                                            <outlet property="lowTemperatureLabel" destination="z0i-Qb-D1C" id="UcI-s4-clT"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
@@ -119,10 +161,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="dailyForcastTableView" destination="fRy-mG-rZ6" id="zdo-VD-35z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="136.80000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
 </document>
