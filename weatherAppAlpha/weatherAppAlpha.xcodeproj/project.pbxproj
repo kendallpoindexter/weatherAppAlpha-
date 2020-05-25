@@ -64,6 +64,7 @@
 				B2F58E75247B411F0058720C /* SceneDelegate.swift */,
 				B2F58E7C247B41200058720C /* Assets.xcassets */,
 				B2F58E81247B41200058720C /* Info.plist */,
+				B2F58E9C247C63A50058720C /* Models */,
 				B2F58E88247B616A0058720C /* Storyboards */,
 				B2F58E9B247C62190058720C /* ViewModels */,
 				B2F58E87247B61340058720C /* Views */,
@@ -95,6 +96,13 @@
 				B2F58E99247C60240058720C /* MainViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B2F58E9C247C63A50058720C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
