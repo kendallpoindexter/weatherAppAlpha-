@@ -14,6 +14,7 @@
 		B2F58E7D247B41200058720C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F58E7C247B41200058720C /* Assets.xcassets */; };
 		B2F58E80247B41200058720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F58E7E247B41200058720C /* LaunchScreen.storyboard */; };
 		B2F58E90247B6B5C0058720C /* DailyForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E8F247B6B5C0058720C /* DailyForcastTableViewCell.swift */; };
+		B2F58E9A247C60240058720C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E99247C60240058720C /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B2F58E7F247B41200058720C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2F58E81247B41200058720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F58E8F247B6B5C0058720C /* DailyForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForcastTableViewCell.swift; sourceTree = "<group>"; };
+		B2F58E99247C60240058720C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B2F58E7C247B41200058720C /* Assets.xcassets */,
 				B2F58E81247B41200058720C /* Info.plist */,
 				B2F58E88247B616A0058720C /* Storyboards */,
+				B2F58E9B247C62190058720C /* ViewModels */,
 				B2F58E87247B61340058720C /* Views */,
 			);
 			path = weatherAppAlpha;
@@ -84,6 +87,14 @@
 				B2F58E7E247B41200058720C /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B2F58E9B247C62190058720C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2F58E99247C60240058720C /* MainViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +172,7 @@
 				B2F58E74247B411F0058720C /* AppDelegate.swift in Sources */,
 				B2F58E90247B6B5C0058720C /* DailyForcastTableViewCell.swift in Sources */,
 				B2F58E76247B411F0058720C /* SceneDelegate.swift in Sources */,
+				B2F58E9A247C60240058720C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
