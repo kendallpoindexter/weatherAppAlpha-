@@ -15,6 +15,8 @@
 		B2F58E80247B41200058720C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F58E7E247B41200058720C /* LaunchScreen.storyboard */; };
 		B2F58E90247B6B5C0058720C /* DailyForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E8F247B6B5C0058720C /* DailyForcastTableViewCell.swift */; };
 		B2F58E9A247C60240058720C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E99247C60240058720C /* MainViewModel.swift */; };
+		B2F58E9E247C64E00058720C /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E9D247C64DF0058720C /* WeatherModel.swift */; };
+		B2F58EA0247C66BA0058720C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F58E9F247C66BA0058720C /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B2F58E81247B41200058720C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F58E8F247B6B5C0058720C /* DailyForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForcastTableViewCell.swift; sourceTree = "<group>"; };
 		B2F58E99247C60240058720C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B2F58E9D247C64DF0058720C /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		B2F58E9F247C66BA0058720C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		B2F58E9C247C63A50058720C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2F58E9D247C64DF0058720C /* WeatherModel.swift */,
+				B2F58E9F247C66BA0058720C /* NetworkManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -179,7 +185,9 @@
 				B2F58E78247B411F0058720C /* MainViewController.swift in Sources */,
 				B2F58E74247B411F0058720C /* AppDelegate.swift in Sources */,
 				B2F58E90247B6B5C0058720C /* DailyForcastTableViewCell.swift in Sources */,
+				B2F58EA0247C66BA0058720C /* NetworkManager.swift in Sources */,
 				B2F58E76247B411F0058720C /* SceneDelegate.swift in Sources */,
+				B2F58E9E247C64E00058720C /* WeatherModel.swift in Sources */,
 				B2F58E9A247C60240058720C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
